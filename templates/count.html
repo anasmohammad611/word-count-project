@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href= {% url 'home' %}>Start again</a>
+    </h1>
+  <h1>Your Text:</h1>
+  {{ fulltext }}
+  <h1>count:</h1>
+  {{ count }}
+  <h1>WORD COUNT:</h1>
+  {% for word,count in wd%}
+
+    {{ word }} - {{ count }}
+<br />
+
+
+   {% endfor %}
+  </body>
+</html>
